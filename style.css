@@ -1,0 +1,39 @@
+.main{
+    display: flex;
+    padding-left:5px ;
+    padding-right: 5px;
+    flex-direction:column;
+    background-color: rgb(77, 74, 74);
+    color:azure;
+    justify-content: center;
+
+  }
+.navbar{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:black;
+    justify-content:space-around;
+    align-items: center;
+}
+.nav{
+    font-size: 20px;
+    
+}
+.abc{ 
+    text-decoration: none;
+    color:rgb(231, 166, 80);  
+}
+.about{
+    color:cadetblue;
+    
+}
+.pic{
+ display: flex;
+ flex-direction:row;
+ justify-content: space-evenly; 
+}
+.image{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
