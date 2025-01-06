@@ -1,101 +1,9 @@
-/* .main{
-    padding: 40px;
-
-  }
-
-.navbar{
-    display: flex;
-    text-align: center;
-    background-color:#424874;
-    justify-content:space-evenly;
-    padding: 15px 30px;
-}
-.nav a{
-        text-decoration: none;
-        color: #edf2f4;
-        margin: 0 15px;
-        font-size: 18px;
-        font-weight: bold;
-    
-    }
-    .nav a:hover {
-        color: #ffcc4d;
-    }
-.abc{ 
-    text-decoration: none;
-    color:#dcd6f7;  
-}
-.about{
-   text-align: center;
-    
-}
-.about h1 {
-    color:#424874;
-}
-
-.about h2 {
-    color: #d62828;
-    margin-bottom: 20px;
-}
-h1{
-    text-align: center;
-}
-.pic{
- display: flex;
- justify-content: center;
- margin: 40px 0;
- gap: 20px;
-}
-.image{
-    border: 2px solid black;
-    border-radius: 8px;
-}
-.forms{
-    width: 40%;
-    background:#dcd6f7;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.form h1 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: #333;
-}
-
-label {
-    float: left;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-input, 
-textarea {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #0056b3;
-} */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #b6a8f0;
+    background: #c6c0e0;
 }
 
 .navbar {
@@ -131,22 +39,17 @@ body {
 
 .about {
     text-align: left;
-    color: #EEEEEE;
+    color:floralwhite;
 }
 .about img{
     float: right;
-    margin-left: 20px;
+    margin-right: 50px;
     border: 2px solid black;
-    border-radius: 100px;
+    border-radius: 8px;
 }
 .about h1 {
-    color:#8B5DFF;
+    color:purple;
     line-height: 1.6;
-}
-
-.about h2 {
-    color: #f10808;
-    margin-bottom: 20px;
 }
 
 .pic {
@@ -162,7 +65,7 @@ body {
 }
 
 .forms {
-    width: 50%;
+    width: 100%;
     background: #dcd6f7;
     padding: 20px;
     border-radius: 8px;
@@ -183,7 +86,7 @@ label {
 
 input,
 textarea {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
@@ -205,10 +108,9 @@ button:hover {
     background-color: #0056b3;
 }
 
-.contactSection {
+/* .contactSection {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    
     margin-top: 40px;
 }
 
@@ -222,8 +124,24 @@ button:hover {
 
 .contact h1 {
     margin-bottom: 20px;
+} */
+ 
+ .contactSection {
+    display: flex;
+    justify-content: space-between;
+    background: #dcd6f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
 }
 
-.contact p {
-    line-height: 1.6;
+/* .forms {
+    width: 55%;
+} */
+
+.contact {
+    width: 40%;
+    background: none; 
+    box-shadow: none; 
 }
