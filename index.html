@@ -9,28 +9,49 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="nav"><h1>BISHA FAREED</h1></div>
+        <div class="nav"><img src="./Bisha-removebg-preview.png" alt="Logo" width="200px" height="200px"></div>
         <div class="nav">
-            <a href="a" target="_blank" class="abc" id="a">Home</a>
-            <a href="b" target="_blank" class="abc" id="b">About</a>
-            <a href="c" target="_blank" class="abc" id="c">Work</a>
-            <a href="d" target="_blank" class="abc" id="d">Contact</a>
+            <a href="#home" class="abc">Home</a>
+            <a href="#about" class="abc">About</a>
+            <a href="#work" class="abc">Work</a>
+            <a href="#contact" class="abc">Contact</a>
         </div>
     </div>
 
     <div class="main">
-        <div class="about">
+        <div class="introduction">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Name: Bisha Fareed | Education: Bachelor's</p>
+        </div>
+
+        <div id="about" class="about">
             <h1>About Me</h1>
             <hr>
             <h1>Hi! I'm <br>Bisha Fareed Siddiqui</h1>
             <img src="./anime.webp" alt="Profile Picture" width="200px" height="200px">
             <p>I am an aspiring developer passionate about learning and growing in the field of web development. <br>My goal is to create user-friendly, visually appealing, and functional websites. Currently, I am a <br>student at SMIT, where I am building a strong foundation in programming and technology.</p>
-            <h1>Skills</h1>
-            <p>HTML, CSS, JavaScript</p>
-            <h1>Work</h1>
+
+            <div class="skills">
+                <h1>Skills</h1>
+                <p class="skill-description">Here are some of the technologies I work with:</p>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="pic">
+        <div id="work" class="pic">
             <div class="work">
                 <img src="./Screenshot (1).png" alt="Simple Calculator" class="image">
                 <p class="txt">Simple Calculator: Performs basic arithmetic operations.</p>
@@ -47,8 +68,8 @@
                 <button class="view"><a href="https://bishafarid.github.io/restaurant_menu/" target="_blank">View</a></button>
             </div>
         </div>
-<hr>
-        <div class="contactSection">
+
+        <div id="contact" class="contactSection">
             <div class="forms">
                 <h1>Contact</h1>
                 <form onsubmit="handleFormSubmit(event)">

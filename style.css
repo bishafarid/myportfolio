@@ -3,71 +3,142 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #c6c0e0;
+    background: #121212;
+    color: #e0e0e0;
 }
 
 .navbar {
     display: flex;
-    align-items: center;
-    background-color: #424874;
-    justify-content: space-evenly;
+    background-color: #2e2e3f;
+    justify-content: space-between;
     padding: 15px 30px;
 }
-
-.nav h1 {
-    color: #b6a8f0;
-    font-weight: bold;
-    font-family: 'Georgia', serif;
+.nav img{
+    width: 200px;
+    height: 100px;
+    
 }
 
-.nav h1:hover {
-    color: #dcd6f7;
-}
 
 .nav a {
     text-decoration: none;
-    color: #edf2f4;
+    color:#ffa726;
     margin: 0 15px;
     font-size: 18px;
     font-weight: bold;
 }
 
 .nav a:hover {
-    color: #dcd6f7;
+    color:antiquewhite;
 }
 
 .main {
     padding: 40px;
 }
 
+.introduction {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.introduction h1 {
+    color: #ff9800;
+    font-size: 36px;
+}
+
+.introduction p {
+    font-size: 18px;
+    color: #cfd8dc;
+}
+
 .about {
     text-align: left;
-    color: floralwhite;
+    color: #e0e0e0;
     font-family: 'Verdana', sans-serif;
 }
 
 .about img {
     float: right;
     margin-right: 50px;
-    border: 2px solid black;
+    border: 2px solid #424242;
     border-radius: 8px;
 }
 
+
+
 .about h1 {
-    color: #6a1b9a;
+    color: #ff9800;
     line-height: 1.6;
     font-family: 'Georgia', serif;
 }
 
 .about p {
-    color: #283593;
+    color: #cfd8dc;
     font-size: 16px;
+}
+
+.skills {
+    background-color: #2e2e3f;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.skills h1 {
+    font-size: 28px;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.skills .skill-description {
+    font-size: 18px;
+    color: #cfd8dc;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    background-color: #424242;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-item i {
+    font-size: 40px;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .pic {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    margin-top: 40px;
 }
 
 .work {
@@ -75,44 +146,63 @@ body {
 }
 
 .image {
-    border: 2px solid black;
+    border: 2px solid #424242;
     border-radius: 8px;
     width: 300px;
     height: 200px;
 }
 
+.image:hover {
+    box-shadow: 0 4px 10px #ff9800;
+}
+
 .txt {
     margin-top: 10px;
-    color: #4527a0;
+    color: #e0e0e0;
     font-family: 'Verdana', sans-serif;
+}
+
+.txt:hover {
+    color: #ffa726;
 }
 
 .view {
     text-decoration: none;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #dcd6f7;
+    background-color: #ff9800;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: #212121;
+}
+
+.view a {
+    text-decoration: none;
 }
 
 .view:hover {
-    background-color: #0056b3;
+    background-color: #ffa726;
 }
 
 .contactSection {
     display: flex;
     justify-content: space-between;
-    background: #dcd6f7;
+    background: #2e2e3f;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px #424242;
     gap: 20px;
+    margin-top: 40px;
+}
+
+.contactSection:hover {
+    box-shadow: 0 4px 10px #ff9800;
 }
 
 .forms {
     width: 55%;
+    color: #e0e0e0;
 }
 
 .forms form {
@@ -124,14 +214,14 @@ body {
 .forms input, .forms textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #424874;
+    border: 2px solid #424242;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .forms button {
     padding: 10px;
-    background-color: #424874;
+    background-color: #424242;
     color: white;
     font-size: 18px;
     border: none;
@@ -140,28 +230,29 @@ body {
 }
 
 .forms button:hover {
-    background-color: #5a5c92;
+    background-color: #616161;
 }
 
 .contact {
     width: 40%;
     text-align: center;
-    padding:70px;
+    padding: 70px;
     font-family: 'Courier New', monospace;
 }
 
 .contact h1 {
-    color: #18021b;
+    color: #ff9800;
     font-family: 'Georgia', serif;
 }
 
 .contact p {
-    color: #141c74;
+    color: #ffc107;
+    font-size: 20px;
     line-height: 1.6;
 }
 
 footer {
-    background: #424874;
+    background: #2e2e3f;
     color: white;
     text-align: center;
     padding: 10px 0;
